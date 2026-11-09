@@ -5,6 +5,8 @@ A Unity Package Manager (UPM) package maintained by **BUGFIGHT STUDIO LTD.**
 ## Requirements
 
 - Unity **6.0 (6000.0)** or newer.
+- Unity Input System **1.11.2** or newer (installed automatically as a package dependency).
+- **Active Input Handling: Both** for the IMGUI console (requires an Editor restart after changing it).
 - Git installed and available to Unity.
 - Permission to use the package under [LICENSE.md](LICENSE.md).
 
@@ -33,7 +35,7 @@ Packages/com.bugfight.essentials/
   Editor/     # Bugfight.Essentials.Editor assembly (Editor only)
 ```
 
-The package starts with empty Runtime and Editor assemblies, no external package dependencies, and no tests or samples. This repository is not a Unity project; import the package into a separate Unity project to develop or validate it.
+The runtime includes an automatically initialized, prefab-free IMGUI command console and PlayMode regression tests. See the [console guide](Packages/com.bugfight.essentials/Runtime/Systems/CommandConsole/README.md). This repository is not a Unity project; import the package into a separate Unity project to develop or validate it.
 
 See the [package README](Packages/com.bugfight.essentials/README.md) for development instructions and the [changelog](Packages/com.bugfight.essentials/CHANGELOG.md) for release notes.
 

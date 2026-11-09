@@ -5,12 +5,14 @@ Runtime utilities and Unity Editor tooling from **BUGFIGHT STUDIO LTD.**
 ## Requirements
 
 - Unity 6.0 (6000.0) or newer.
-- No external package dependencies.
+- Unity Input System 1.11.2 or newer (installed as a package dependency).
+- Active Input Handling set to **Both** for runtime IMGUI input (restart the Editor after changing it).
 
 ## Development
 
-This initial version contains assembly definitions only; no utility APIs are
-implemented yet.
+The runtime includes a prefab-free, automatically initialized IMGUI command console.
+See the [command console guide](Runtime/Systems/CommandConsole/README.md) for controls,
+command registration, migration notes, and regression tests.
 
 - Add runtime code to `Runtime/`, using the `Bugfight.Essentials` namespace.
 - Add Unity Editor tooling to `Editor/`, using `Bugfight.Essentials.Editor`.

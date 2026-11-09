@@ -8,5 +8,7 @@
   "author": {
     "name": "BUGFIGHT STUDIO LTD."
   },
-  "dependencies": {}
+  "dependencies": {
+    "com.unity.inputsystem": "1.11.2"
+  }
 }

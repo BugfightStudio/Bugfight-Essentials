@@ -1,7 +1,7 @@
 {
   "name": "Bugfight.Essentials",
   "rootNamespace": "Bugfight.Essentials",
-  "references": [],
+   "references": ["Unity.InputSystem"],
   "includePlatforms": [],
   "excludePlatforms": [],
   "allowUnsafeCode": false,
