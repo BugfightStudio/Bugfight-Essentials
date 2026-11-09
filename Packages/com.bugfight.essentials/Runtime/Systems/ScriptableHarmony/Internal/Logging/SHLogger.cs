@@ -1,9 +1,9 @@
 using System.Diagnostics;
-using NuiN.ScriptableHarmony.Editor;
+using Bugfight.Systems.ScriptableHarmony.Internal.Editor;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
 
-namespace NuiN.ScriptableHarmony.Core
+namespace Bugfight.Systems.ScriptableHarmony.Internal
 {
     internal static class SHLogger
     {

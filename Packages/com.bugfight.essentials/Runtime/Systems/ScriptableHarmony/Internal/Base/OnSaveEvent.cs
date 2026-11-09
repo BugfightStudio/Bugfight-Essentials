@@ -3,7 +3,7 @@
 using System;
 using UnityEditor;
 
-namespace NuiN.ScriptableHarmony.Core
+namespace Bugfight.Systems.ScriptableHarmony.Internal
 {
     internal class OnSaveEvent : AssetModificationProcessor
     {

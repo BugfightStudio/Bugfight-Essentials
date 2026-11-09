@@ -70,9 +70,9 @@ namespace Bugfight.Internal
                 registeredAssemblies.Add(assetName);
             }
 
-            //add ScriptableHarmony assembly to include DefaultCommands for CommandConsole
-            const string shAssembly = "com.nuin.scriptableharmony";
-            if (!registeredAssemblies.Contains(shAssembly) && !IgnoredAssemblies.Contains(shAssembly)) registeredAssemblies.Add(shAssembly);
+            // Include the Essentials assembly for CommandConsole's DefaultCommands.
+            string essentialsAssembly = typeof(AssemblyContainerSO).Assembly.GetName().Name;
+            if (!registeredAssemblies.Contains(essentialsAssembly) && !IgnoredAssemblies.Contains(essentialsAssembly)) registeredAssemblies.Add(essentialsAssembly);
             
             EditorUtility.SetDirty(this);
             #endif

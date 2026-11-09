@@ -1,9 +1,9 @@
 using System;
 using System.Diagnostics;
-using NuiN.ScriptableHarmony.Core;
+using Bugfight.Systems.ScriptableHarmony.Internal;
 using UnityEditor;
 
-namespace NuiN.ScriptableHarmony
+namespace Bugfight.Systems.ScriptableHarmony
 {
     [Serializable]
     public class SetScriptableVariable<T> : ScriptableVariableReference<T>

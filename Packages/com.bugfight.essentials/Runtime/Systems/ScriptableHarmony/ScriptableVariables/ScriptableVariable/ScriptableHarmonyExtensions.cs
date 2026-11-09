@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace NuiN.ScriptableHarmony
+namespace Bugfight.Systems.ScriptableHarmony
 {
     public static class ScriptableHarmonyExtensions
     {

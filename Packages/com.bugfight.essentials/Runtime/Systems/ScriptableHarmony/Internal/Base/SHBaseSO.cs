@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace NuiN.ScriptableHarmony.Core
+namespace Bugfight.Systems.ScriptableHarmony.Internal
 {
     public abstract class SHBaseSO : ScriptableObject
     {

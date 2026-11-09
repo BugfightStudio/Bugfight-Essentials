@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace NuiN.NExtensions
+namespace Bugfight.Utils.Extensions
 {
 	// https://gist.github.com/mstevenson/7b85893e8caf5ca034e6
 	public static class JointExtensions

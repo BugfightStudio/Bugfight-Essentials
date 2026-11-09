@@ -1,7 +1,7 @@
-using NuiN.ScriptableHarmony.Core;
+using Bugfight.Systems.ScriptableHarmony.Internal;
 using UnityEngine;
 
-namespace NuiN.ScriptableHarmony
+namespace Bugfight.Systems.ScriptableHarmony
 {   
     public class RigidbodyRuntimeSetComponent : RuntimeSetComponent<Rigidbody> { }
 }

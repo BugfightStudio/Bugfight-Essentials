@@ -1,10 +1,10 @@
 using System;
 using System.Reflection;
-using NuiN.ScriptableHarmony.Core;
+using Bugfight.Systems.ScriptableHarmony.Internal;
 using UnityEditor;
 using UnityEngine;
 
-namespace NuiN.ScriptableHarmony.Editor
+namespace Bugfight.Systems.ScriptableHarmony.Internal.Editor
 {
 #if UNITY_EDITOR
     internal static class SOReferenceGUIHelper

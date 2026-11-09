@@ -4,7 +4,7 @@ using System.Linq;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace NuiN.NExtensions
+namespace Bugfight.Utils
 {
     public static class RandomUtils
     {

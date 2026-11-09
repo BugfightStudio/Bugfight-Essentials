@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace NuiN.ScriptableHarmony.Core
+namespace Bugfight.Systems.ScriptableHarmony.Internal
 {
     public class RuntimeSingleComponent<T> : MonoBehaviour
     {

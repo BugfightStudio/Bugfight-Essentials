@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace NuiN.ScriptableHarmony.Core
+namespace Bugfight.Systems.ScriptableHarmony.Internal
 {
     [Serializable]
     public abstract class ScriptableVariableReference<T>

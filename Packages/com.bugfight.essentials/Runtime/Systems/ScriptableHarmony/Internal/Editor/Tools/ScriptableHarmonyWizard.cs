@@ -1,11 +1,10 @@
 #if UNITY_EDITOR
 
-using NuiN.NExtensions.Editor;
-using NuiN.ScriptableHarmony.Core;
+using Bugfight.Systems.ScriptableHarmony.Internal;
 using UnityEditor;
 using UnityEngine;
 
-namespace NuiN.ScriptableHarmony.Editor
+namespace Bugfight.Systems.ScriptableHarmony.Internal.Editor
 {
     internal class ScriptableHarmonyWizard : EditorWindow
     {

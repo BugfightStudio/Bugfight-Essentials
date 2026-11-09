@@ -1,10 +1,10 @@
 using Bugfight.Attributes;
-using NuiN.NExtensions;
+using Bugfight.Internal;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace NuiN.ScriptableHarmony.Core
+namespace Bugfight.Systems.ScriptableHarmony.Internal
 {
     public abstract class ScriptableVariableLifetimeSO<T> : SHBaseSO
     {

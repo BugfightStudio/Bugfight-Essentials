@@ -1,12 +1,11 @@
 using System.Collections.Generic;
 using System.IO;
 using Bugfight.Attributes;
-using NuiN.NExtensions;
-using NuiN.ScriptableHarmony.Core;
+using Bugfight.Systems.ScriptableHarmony.Internal;
 using UnityEditor;
 using UnityEngine;
 
-namespace NuiN.ScriptableHarmony
+namespace Bugfight.Systems.ScriptableHarmony
 {
     public class AssemblyContainerSO : ScriptableObject
     {
@@ -72,9 +71,9 @@ namespace NuiN.ScriptableHarmony
                 registeredAssemblies.Add(assetName);
             }
 
-            //add ScriptableHarmony assembly to include DefaultCommands for CommandConsole
-            const string shAssembly = "com.nuin.scriptableharmony";
-            if (!registeredAssemblies.Contains(shAssembly) && !IgnoredAssemblies.Contains(shAssembly)) registeredAssemblies.Add(shAssembly);
+            // Include the Essentials assembly for CommandConsole's DefaultCommands.
+            string essentialsAssembly = typeof(AssemblyContainerSO).Assembly.GetName().Name;
+            if (!registeredAssemblies.Contains(essentialsAssembly) && !IgnoredAssemblies.Contains(essentialsAssembly)) registeredAssemblies.Add(essentialsAssembly);
             
             EditorUtility.SetDirty(this);
             #endif

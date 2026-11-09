@@ -1,6 +1,6 @@
 using System;
 
-namespace NuiN.ScriptableHarmony
+namespace Bugfight.Systems.ScriptableHarmony
 {
     public static class ScriptableHarmonyManager
     {

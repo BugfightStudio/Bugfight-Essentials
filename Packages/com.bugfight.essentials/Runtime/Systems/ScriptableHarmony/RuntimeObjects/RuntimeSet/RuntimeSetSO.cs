@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-using NuiN.ScriptableHarmony.Editor;
+using Bugfight.Systems.ScriptableHarmony.Internal.Editor;
 using UnityEngine;
 
-namespace NuiN.ScriptableHarmony.Core
+namespace Bugfight.Systems.ScriptableHarmony.Internal
 {
     public class RuntimeSetSO<T> : RuntimeObjectSO
     {

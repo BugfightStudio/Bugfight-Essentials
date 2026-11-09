@@ -5,11 +5,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using Bugfight.Attributes;
+using Bugfight.Internal;
 using UnityEditor;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace NuiN.NExtensions
+namespace Bugfight.Editor
 {
 	[CustomEditor(typeof(Object), true), CanEditMultipleObjects]
     public class AttributesEditor : UnityEditor.Editor

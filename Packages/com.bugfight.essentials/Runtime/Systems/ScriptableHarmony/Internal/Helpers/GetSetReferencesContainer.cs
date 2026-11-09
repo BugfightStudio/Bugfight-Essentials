@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
-using NuiN.ScriptableHarmony.Editor;
+using Bugfight.Systems.ScriptableHarmony.Internal.Editor;
 using UnityEngine;
 
-namespace NuiN.ScriptableHarmony.Core
+namespace Bugfight.Systems.ScriptableHarmony.Internal
 {
     [Serializable]
     public class GetSetReferencesContainer : ReferencesContainerBase

@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-using NuiN.NExtensions;
+using Bugfight.Attributes;
 using UnityEngine;
 
-namespace NuiN.ScriptableHarmony.Core
+namespace Bugfight.Systems.ScriptableHarmony.Internal
 {
     public class ScriptableListSO<T> : ScriptableVariableLifetimeSO<T>
     {

@@ -1,4 +1,4 @@
-namespace NuiN.ScriptableHarmony.Core
+namespace Bugfight.Systems.ScriptableHarmony.Internal
 {
     public enum Access { Getter, Setter }
     public enum SOType { Variable, List, RuntimeSet, RuntimeSingle }

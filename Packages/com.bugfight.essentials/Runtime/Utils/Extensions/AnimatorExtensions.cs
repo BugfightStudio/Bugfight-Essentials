@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-namespace NuiN.NExtensions
+namespace Bugfight.Utils.Extensions
 {
     public static class AnimatorExtensions
     {

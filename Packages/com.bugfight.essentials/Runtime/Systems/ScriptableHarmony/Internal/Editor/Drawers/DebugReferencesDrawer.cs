@@ -2,11 +2,11 @@
 
 using System.Collections.Generic;
 using System.Linq;
-using NuiN.ScriptableHarmony.Core;
+using Bugfight.Systems.ScriptableHarmony.Internal;
 using UnityEditor;
 using UnityEngine;
 
-namespace NuiN.ScriptableHarmony.Editor
+namespace Bugfight.Systems.ScriptableHarmony.Internal.Editor
 {
     [CustomPropertyDrawer(typeof(GetSetReferencesContainer))]
     internal class GetSetReferencesContainerDrawer : PropertyDrawer

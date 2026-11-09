@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace NuiN.NExtensions
+namespace Bugfight.Utils
 {
     public static class VectorUtils
     {

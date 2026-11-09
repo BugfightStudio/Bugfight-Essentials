@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace NuiN.NExtensions
+namespace Bugfight.Attributes
 {
     public class ReadOnlyPlayModeAttribute : PropertyAttribute { }
 

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace NuiN.NExtensions
+namespace Bugfight.Utils
 {
     public static class GeneralUtils
     {

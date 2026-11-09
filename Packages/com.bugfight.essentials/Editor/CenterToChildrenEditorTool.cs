@@ -3,7 +3,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace NuiN.NExtensions.Editor
+namespace Bugfight.Editor
 {
     internal static class CenterToChildrenEditorTool
     {

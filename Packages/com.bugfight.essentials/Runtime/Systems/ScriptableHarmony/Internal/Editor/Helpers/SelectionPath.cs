@@ -2,7 +2,7 @@
 using UnityEditor;
 using Object = UnityEngine.Object;
 
-namespace NuiN.NExtensions.Editor
+namespace Bugfight.Systems.ScriptableHarmony.Internal.Editor
 {
 #if UNITY_EDITOR
     public static class SelectionPath

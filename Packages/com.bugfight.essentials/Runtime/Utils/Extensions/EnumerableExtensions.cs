@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NuiN.NExtensions
+namespace Bugfight.Utils.Extensions
 {
     public static class EnumerableExtensions
     {

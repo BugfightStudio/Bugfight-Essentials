@@ -7,13 +7,13 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace NuiN.NExtensions.Editor
+namespace Bugfight.Editor.Tools.StringBaker
 {
     internal static class StringBaker
     {
         const string SCRIPT_TEMPLATE =
 @"using UnityEngine;
-namespace NuiN.NExtensions
+namespace Bugfight.Utils
 {
     public static class {SCRIPTNAME}
     {

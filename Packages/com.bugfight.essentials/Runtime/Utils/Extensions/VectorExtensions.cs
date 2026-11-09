@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace NuiN.NExtensions
+namespace Bugfight.Utils.Extensions
 {
     public static class VectorExtensions
     {

@@ -5,10 +5,10 @@ using UnityEngine;
 using UnityEditor;
 using System.Collections.Generic;
 using System.Linq;
-using NuiN.ScriptableHarmony.Core;
+using Bugfight.Systems.ScriptableHarmony.Internal;
 using Object = UnityEngine.Object;
 
-namespace NuiN.ScriptableHarmony.Editor
+namespace Bugfight.Systems.ScriptableHarmony.Internal.Editor
 {
     internal class FindScriptableObjectGUI
     {

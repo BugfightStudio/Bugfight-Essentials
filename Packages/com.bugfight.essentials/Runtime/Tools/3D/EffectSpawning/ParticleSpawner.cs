@@ -1,10 +1,11 @@
 using System.Collections.Generic;
+using Bugfight.Internal;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Object = UnityEngine.Object;
 using Random = UnityEngine.Random;
 
-namespace NuiN.NExtensions
+namespace Bugfight.Tools.EffectSpawning
 {
     public static class ParticleSpawner
     {

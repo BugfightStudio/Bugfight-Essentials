@@ -1,7 +1,7 @@
 using UnityEngine;
-using NuiN.ScriptableHarmony.Core;
+using Bugfight.Systems.ScriptableHarmony.Internal;
 
-namespace NuiN.ScriptableHarmony
+namespace Bugfight.Systems.ScriptableHarmony
 {   
     public class AudioSourceRuntimeSetItem : RuntimeSetComponent<AudioSource> { }
 }

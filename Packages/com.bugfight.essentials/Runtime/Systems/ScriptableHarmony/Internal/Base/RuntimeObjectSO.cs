@@ -1,9 +1,8 @@
 using Bugfight.Attributes;
-using NuiN.NExtensions;
 using UnityEditor;
 using UnityEngine.SceneManagement;
 
-namespace NuiN.ScriptableHarmony.Core
+namespace Bugfight.Systems.ScriptableHarmony.Internal
 {
     public abstract class RuntimeObjectSO : SHBaseSO
     {

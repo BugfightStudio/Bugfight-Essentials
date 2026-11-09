@@ -1,20 +1,19 @@
 ﻿using UnityEngine;
 using UnityEditor;
 using System.IO;
-using NuiN.NExtensions.Editor;
-using NuiN.ScriptableHarmony.Core;
+using Bugfight.Systems.ScriptableHarmony.Internal;
 using Object = UnityEngine.Object;
 
-namespace NuiN.ScriptableHarmony.Editor
+namespace Bugfight.Systems.ScriptableHarmony.Internal.Editor
 {
 #if UNITY_EDITOR
     internal class GenerateCustomTypeGUI
     {
         const string SCRIPT_TEMPLATE =
 @"using UnityEngine;
-using NuiN.ScriptableHarmony.Core;
+using Bugfight.Systems.ScriptableHarmony.Internal;
 
-namespace NuiN.ScriptableHarmony
+namespace Bugfight.Systems.ScriptableHarmony
 {   
     [CreateAssetMenu(
         menuName = ""ScriptableHarmony/{CustomOrCommon}/{Suffix}/{Type}"",
@@ -24,9 +23,9 @@ namespace NuiN.ScriptableHarmony
         
         const string COMPONENT_SCRIPT_TEMPLATE = 
 @"using UnityEngine;
-using NuiN.ScriptableHarmony.Core;
+using Bugfight.Systems.ScriptableHarmony.Internal;
 
-namespace NuiN.ScriptableHarmony
+namespace Bugfight.Systems.ScriptableHarmony
 {   
     public class {TypeWithSuffix}Item : {BaseClass}<{Type}> { }
 }";

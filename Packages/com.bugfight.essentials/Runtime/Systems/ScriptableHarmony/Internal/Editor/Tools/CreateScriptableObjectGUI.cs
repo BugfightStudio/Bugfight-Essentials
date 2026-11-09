@@ -2,10 +2,9 @@ using UnityEngine;
 using UnityEditor;
 using System;
 using System.Linq;
-using NuiN.NExtensions.Editor;
-using NuiN.ScriptableHarmony.Core;
+using Bugfight.Systems.ScriptableHarmony.Internal;
 
-namespace NuiN.ScriptableHarmony.Editor
+namespace Bugfight.Systems.ScriptableHarmony.Internal.Editor
 {
 #if UNITY_EDITOR
     internal class CreateScriptableObjectGUI

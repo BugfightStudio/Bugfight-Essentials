@@ -2,7 +2,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace NuiN.NExtensions
+namespace Bugfight.Internal
 {
     internal class RuntimeHelperInstance : MonoBehaviour
     {
