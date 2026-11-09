@@ -1,8 +1,7 @@
 using System.Collections.Generic;
 using System.IO;
-#if UNITY_EDITOR
+using Bugfight.Attributes;
 using UnityEditor;
-#endif
 using UnityEngine;
 
 namespace Bugfight.Internal
