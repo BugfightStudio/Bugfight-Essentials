@@ -1,6 +1,6 @@
 {
   "name": "com.bugfight.essentials",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "displayName": "Bugfight Essentials",
   "description": "Runtime utilities and Unity Editor tooling from BUGFIGHT STUDIO LTD.",
   "unity": "6000.0",
@@ -9,6 +9,7 @@
     "name": "BUGFIGHT STUDIO LTD."
   },
   "dependencies": {
-    "com.unity.inputsystem": "1.11.2"
+    "com.unity.inputsystem": "1.11.2",
+    "com.unity.render-pipelines.core": "17.0.3"
   }
 }

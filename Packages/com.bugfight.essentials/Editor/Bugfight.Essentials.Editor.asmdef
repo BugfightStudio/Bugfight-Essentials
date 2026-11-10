@@ -2,7 +2,8 @@
   "name": "Bugfight.Essentials.Editor",
   "rootNamespace": "Bugfight.Essentials.Editor",
   "references": [
-    "GUID:abc843ba2f224b4b8c7ed69dba1bd17f"
+    "GUID:abc843ba2f224b4b8c7ed69dba1bd17f",
+    "GUID:df380645f10b7bc4b97d4f5eb6303d95"
   ],
   "includePlatforms": [
     "Editor"

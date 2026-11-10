@@ -6,6 +6,7 @@ A Unity Package Manager (UPM) package maintained by **BUGFIGHT STUDIO LTD.**
 
 - Unity **6.0 (6000.0)** or newer.
 - Unity Input System **1.11.2** or newer (installed automatically as a package dependency).
+- Unity Render Pipeline Core **17.0.3** or newer (installed automatically as a package dependency).
 - **Active Input Handling: Both** for the IMGUI console (requires an Editor restart after changing it).
 - Git installed and available to Unity.
 - Permission to use the package under [LICENSE.md](LICENSE.md).
@@ -24,7 +25,7 @@ Alternatively, add this entry to your project's `Packages/manifest.json` depende
 "com.bugfight.essentials": "https://github.com/NuiN99/Bugfight-Essentials.git?path=/Packages/com.bugfight.essentials"
 ```
 
-For reproducible installations, append `#<commit-sha>` or an existing release tag after the path. Package version `0.1.0` does not itself create a Git tag. Private repository access requires Git credentials configured on the installing machine; repository access does not itself grant a license.
+For reproducible installations, append `#<commit-sha>` or an existing release tag after the path. Package version `0.2.0` does not itself create a Git tag. Private repository access requires Git credentials configured on the installing machine; repository access does not itself grant a license.
 
 ## Repository layout
 

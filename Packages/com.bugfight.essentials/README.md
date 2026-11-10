@@ -6,6 +6,7 @@ Runtime utilities and Unity Editor tooling from **BUGFIGHT STUDIO LTD.**
 
 - Unity 6.0 (6000.0) or newer.
 - Unity Input System 1.11.2 or newer (installed as a package dependency).
+- Unity Render Pipeline Core 17.0.3 or newer (installed as a package dependency).
 - Active Input Handling set to **Both** for runtime IMGUI input (restart the Editor after changing it).
 
 ## Development
