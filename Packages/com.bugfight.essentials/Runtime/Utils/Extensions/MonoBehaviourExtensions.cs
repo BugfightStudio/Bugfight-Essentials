@@ -6,6 +6,24 @@ namespace Bugfight.Utils.Extensions
 {
     public static class MonoBehaviourExtensions
     {
+        /// <summary>
+        /// Returns the nearest matching ancestor component, including inactive ancestors
+        /// but excluding the starting transform itself. Returns null if none is found.
+        /// </summary>
+        public static T GetComponentInAnyParent<T>(this Transform transform) where T : Component
+        {
+            if (transform == null) return null;
+
+            Transform parent = transform.parent;
+            while (parent != null)
+            {
+                if (parent.TryGetComponent<T>(out var component)) return component;
+                parent = parent.parent;
+            }
+
+            return null;
+        }
+
         public static void StopCoroutineSafe(this MonoBehaviour behaviour, Coroutine coroutine)
         {
             if(coroutine != null) behaviour.StopCoroutine(coroutine);
