@@ -54,6 +54,40 @@ namespace Bugfight.Tools.General
             return perpendicularDist <= radiusAtPoint;
         }
 
+        /// <summary>
+        /// Returns unique transforms whose positions are inside the cone and are not obstructed.
+        /// </summary>
+        public List<Transform> DetectAll(Vector3 startPos, Vector3 dir, Func<Collider, bool> ignoreAction = null)
+        {
+            List<Transform> targets = new();
+            if (MaxRange <= 0 || dir.sqrMagnitude == 0) return targets;
+
+            dir.Normalize();
+
+            float tipRadius = Mathf.Tan(FOVRadius * Mathf.Deg2Rad) * MaxRange;
+            float searchRadius = Mathf.Max(BaseRadius, Mathf.Sqrt(MaxRange * MaxRange + tipRadius * tipRadius));
+            Collider[] hits = Physics.OverlapSphere(startPos, searchRadius, LayerMask);
+            HashSet<Collider> ignoredColliders = IgnoredColliders;
+            HashSet<Transform> detected = new();
+
+            foreach (var hit in hits)
+            {
+                if (self != null && hit.transform == self.transform) continue;
+                if (ignoredColliders.Contains(hit)) continue;
+                if (ignoreAction != null && ignoreAction.Invoke(hit)) continue;
+
+                Transform target = hit.transform;
+                if (detected.Contains(target)) continue;
+                if (!InThickCone(startPos, dir, target.position)) continue;
+                if (HitObstacle(startPos, target.position, target)) continue;
+
+                detected.Add(target);
+                targets.Add(target);
+            }
+
+            return targets;
+        }
+
         public Transform DetectBest(Vector3 startPos, Vector3 dir, Func<Collider, bool> ignoreAction = null)
         {
             dir.Normalize();
@@ -192,7 +226,7 @@ namespace Bugfight.Tools.General
             
             return ObstacleMask != default 
                    && Physics.Linecast(start, end, out RaycastHit obstacleHit, ObstacleMask) 
-                   && obstacleHit.transform != self.transform 
+                   && (self == null || obstacleHit.transform != self.transform)
                    && obstacleHit.transform != target;
         }
         
